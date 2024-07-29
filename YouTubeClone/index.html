@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/homeshorts.css" />
+    <link rel="stylesheet" href="styles/single-video.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="header">
+      <div class="left-section">
+        <a href="#"
+          ><img
+            class="hamburger-menu"
+            src="icons/hamburger-menu.svg"
+            alt="hamburger-menu"
+          />
+        </a>
+        <a href="#"
+          ><img
+            class="youtube-logo"
+            src="icons/youtube-logo.svg"
+            alt="youtube-logo"
+          />
+        </a>
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <a href="#"
+          ><button class="search-button">
+            <img class="search-icon" src="icons/search.svg" alt="search" />
+            <div class="tooltip">Search</div>
+          </button>
+        </a>
+
+        <a href="#">
+          <button class="voice-search-button">
+            <img
+              class="voice-search-icon"
+              src="icons/voice-search-icon.svg"
+              alt="voice-search-button"
+            />
+            <div class="tooltip">Search with your voice</div>
+          </button>
+        </a>
+      </div>
+
+      <div class="right-section">
+        <a href="#">
+          <div class="upload-icon-container">
+            <img class="upload-icon" src="icons/upload.svg" alt="upload" />
+
+            <div class="tooltip">Create</div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="youtube-apps-container">
+            <img
+              class="youtube-icon"
+              src="icons/youtube-apps.svg"
+              alt="youtube-apps"
+            />
+            <div class="tooltip">Apps</div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="notifications-icon-container">
+            <img
+              class="notification-icon"
+              src="icons/notifications.svg"
+              alt="notifications"
+            />
+            <div class="notifications-count">3</div>
+            <div class="tooltip">Notifications</div>
+          </div>
+        </a>
+
+        <a href="#">
+          <img
+            class="current-user-picture"
+            src="thumbnails/Channel Pictures/my-channel.jpeg"
+            alt="my-channel"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- sidebar start -->
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <a href="#">
+          <img src="icons/home.svg" alt="home" />
+        </a>
+        <div class="sidebar-text">Home</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="explore" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="subscriptions" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="originals" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="youtube-music" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="library" />
+        <div>Library</div>
+      </div>
+    </div>
+
+    <!-- regular video start -->
+
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <div class="video-stats-info">
+              <p class="video-title">
+                How to became a journalist from zero to hero at home
+              </p>
+              <p class="video-author">The Futur</p>
+              <p class="video-stats">1.2m views &#183; 3 months ago</p>
+            </div>
+
+            <div width="24" height="24" class="shorts-share-setting">
+              <a href="#"
+                ><img src="icons/three-dots.png" alt="three-dots"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">5:02</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">10:32</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">21:54</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">1:07</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">12:13</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">5:02</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">5:02</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- shorts start -->
+
+    <div class="shorts-section-title">
+      <div class="shorts-logo">
+        <img
+          width="24"
+          height="24"
+          src="icons/youtube-shorts-icon.png"
+          alt="youtube-shorts-icon"
+        />
+        <span>Shorts</span>
+      </div>
+      <div class="shorts-cancel">
+        <a href="#"
+          ><img width="24" height="24" src="icons/close.png" alt="close"
+        /></a>
+      </div>
+    </div>
+
+    <div class="shorts-grid">
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img src="shorts-thumbnail/fruits.webp" alt="fruits" />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img
+            src="shorts-thumbnail/beautiful-female.webp"
+            alt="beautiful-female"
+          />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img src="shorts-thumbnail/food.webp" alt="food" />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img src="shorts-thumbnail/dance.webp" alt="dance" />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img src="shorts-thumbnail/dive.webp" alt="dive" />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img
+            src="shorts-thumbnail/beautiful-female.webp"
+            alt="beautiful-female"
+          />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shorts-preview">
+        <div class="shorts-thumbnail">
+          <img src="shorts-thumbnail/food.webp" alt="food" />
+        </div>
+        <div class="shorts-video-info">
+          <div class="shorts-stats">
+            <a href="#">
+              <p class="shorts-title">Satisfying fruits cutting</p>
+              <p class="shorts-view"><span>155M</span> views</p>
+            </a>
+          </div>
+          <div width="24" height="24" class="shorts-share-setting">
+            <a href="#"><img src="icons/three-dots.png" alt="three-dots" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- regular video start -->
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">5:02</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail2.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">5:02</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic2.jpg"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">Super Simple Dev</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail1.webp"
+            alt="Thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="thumbnails/Channel Pictures/profilepic1.png"
+              alt="profiile picture"
+            />
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              How to became a journalist from zero to hero at home
+            </p>
+            <p class="video-author">The Futur</p>
+            <p class="video-stats">1.2m views &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
